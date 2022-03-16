@@ -1,0 +1,21 @@
+public class TempMedian {
+        public static void main(String[] args){
+
+            int initTemp = Integer.parseInt(args[0]);
+
+            System.out.print(initTemp);
+
+            int newTemp = initTemp;
+
+            for (int i=1;i<args.length;i++){
+                    if (args[i].charAt(0) == '+') {
+                        newTemp++;
+                    }
+                    else if (args[i].charAt(0) == '-') {
+                        newTemp--;
+                    }
+                System.out.print(" " + newTemp);
+            }
+        }
+
+    }
